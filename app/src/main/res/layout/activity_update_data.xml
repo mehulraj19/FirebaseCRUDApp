@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".UpdateDataActivity">
+
+    <EditText
+        android:id="@+id/editUpdateUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter User Name"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/editUpdateFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Full Name"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/editUpdateUserName"
+        />
+    <EditText
+        android:id="@+id/editUpdateDesignation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Designation"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/editUpdateFullName"
+        />
+    <Button
+        android:id="@+id/updateDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update data"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_below="@id/editUpdateDesignation"
+        />
+</RelativeLayout>
