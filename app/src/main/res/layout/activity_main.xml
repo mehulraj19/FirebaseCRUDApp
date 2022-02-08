@@ -2,57 +2,101 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_drawable"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:padding="20dp">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/firebasemain"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="FIREBASE APP"
+            android:textColor="#32527B"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="-5dp"/>
+        
+    </LinearLayout>
+    
+    
 
     <Button
         android:id="@+id/addButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="67dp"
         android:text="add data"
         android:textSize="20dp"
+        android:background="@drawable/rounded_corner"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="60dp"
         android:textStyle="bold"
-        android:shadowRadius="@integer/material_motion_duration_long_1"/>
+        />
 
     <Button
         android:id="@+id/viewButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="67dp"
         android:text="view data"
         android:textSize="20dp"
+        android:background="@drawable/rounded_corner"
         android:textStyle="bold"
-        android:layout_margin="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="25dp"
         android:shadowRadius="@integer/material_motion_duration_long_1"/>
     <Button
         android:id="@+id/viewAllButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="67dp"
+        android:background="@drawable/rounded_corner"
         android:text="view all data"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_margin="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="25dp"/>
     <Button
         android:id="@+id/updateButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="67dp"
+        android:background="@drawable/rounded_corner"
         android:text="update data"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_margin="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="25dp"/>
     <Button
         android:id="@+id/deleteButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="67dp"
+        android:background="@drawable/rounded_corner"
         android:text="delete data"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_margin="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="25dp"/>
 
 </LinearLayout>

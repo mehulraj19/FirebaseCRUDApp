@@ -2,11 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_drawable"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
     tools:context=".DeleteDataActivity">
 
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:letterSpacing=".02"
+        android:textSize="25dp"
+        android:text="DELETE DATA: FIREBASE"
+        android:gravity="center"
+        android:textColor="#32527B"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
     <EditText
         android:id="@+id/editDeleteDataUsername"
         android:layout_width="match_parent"
@@ -16,17 +30,21 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="30dp"
         android:hint="Enter Username"
-        android:textSize="20dp"
+        android:textSize="25dp"
+        android:textColorHint="#32527B"
+        android:textColor="#32527B"
+        android:layout_below="@+id/textview"
         />
+
     <Button
         android:id="@+id/deleteDataButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/editDeleteDataUsername"
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_corner"
         android:text="delete data"
         android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_below="@+id/editDeleteDataUsername"
-        />
+        android:textStyle="bold" />
 </RelativeLayout>

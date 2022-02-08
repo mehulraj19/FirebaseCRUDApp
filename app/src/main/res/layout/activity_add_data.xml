@@ -2,47 +2,75 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_drawable"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddDataActivity"
     android:padding="20dp">
 
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:letterSpacing=".02"
+        android:textSize="25dp"
+        android:text="ADD DATA: FIREBASE"
+        android:textColor="#32527B"
+        android:textStyle="bold"/>
+
     <EditText
         android:id="@+id/editUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter User Name"
-        android:textSize="20sp"
-        android:layout_marginTop="80dp"
+        android:layout_below="@+id/textview"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
-        />
+        android:hint="Enter User Name"
+        android:textColor="#32527B"
+        android:textColorHint="#32527B"
+        android:textSize="25sp"/>
     <EditText
         android:id="@+id/editFullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Full Name"
-        android:textSize="20sp"
+        android:textSize="25sp"
+        android:textColorHint="#32527B"
+        android:textColor="#32527B"
         android:layout_margin="20dp"
         android:layout_below="@id/editUserName"
         />
+
     <EditText
         android:id="@+id/editDesignation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Designation"
-        android:textSize="20sp"
-        android:layout_margin="20dp"
         android:layout_below="@id/editFullName"
+        android:textColorHint="#32527B"
+        android:textColor="#32527B"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Designation"
+        android:textSize="25sp"
         />
+
     <Button
         android:id="@+id/addDataButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:text="Add data"
         android:textSize="20sp"
+        android:background="@drawable/rounded_corner"
         android:layout_margin="20dp"
         android:layout_below="@id/editDesignation"
+        android:textStyle="bold"
         />
 </RelativeLayout>

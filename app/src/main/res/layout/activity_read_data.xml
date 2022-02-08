@@ -1,31 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_drawable"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
     tools:context=".ReadDataActivity">
 
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:text="READ DATA: FIREBASE"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#32527B"
+        android:letterSpacing=".02"
+        android:textSize="25dp"
+        />
+
     <EditText
         android:id="@+id/editReadUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter User Name"
-        android:textSize="20sp"
+        android:textSize="25dp"
+        android:textColorHint="#32527B"
+        android:textColor="#32527B"
         android:layout_marginTop="60dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
+        android:layout_below="@+id/textview"
         />
 
     <Button
         android:id="@+id/readDataButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:text="Read data"
         android:textSize="24dp"
         android:layout_margin="20dp"
+        android:background="@drawable/rounded_corner"
         android:layout_below="@+id/editReadUserName"
         />
 
@@ -38,6 +58,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginRight="20dp"
         android:textSize="21dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="#32527B"/>
 
 </RelativeLayout>
